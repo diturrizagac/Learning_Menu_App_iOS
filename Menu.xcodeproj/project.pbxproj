@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2AB4BD219743BC002C3BA1 /* PlatosFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AB4BC219743BC002C3BA1 /* PlatosFactory.swift */; };
+		EC2AB4C0219743DE002C3BA1 /* Plato.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AB4BF219743DE002C3BA1 /* Plato.swift */; };
 		EC5363672197240B00063268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5363662197240B00063268 /* AppDelegate.swift */; };
-		EC5363692197240B00063268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5363682197240B00063268 /* ViewController.swift */; };
 		EC53636C2197240B00063268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC53636A2197240B00063268 /* Main.storyboard */; };
 		EC53636E2197240D00063268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC53636D2197240D00063268 /* Assets.xcassets */; };
 		EC5363712197240D00063268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC53636F2197240D00063268 /* LaunchScreen.storyboard */; };
+		EC53637C21973ECE00063268 /* PlatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53637B21973ECE00063268 /* PlatosViewController.swift */; };
+		EC53637F21973F7800063268 /* PlatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53637E21973F7800063268 /* PlatoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC2AB4BC219743BC002C3BA1 /* PlatosFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatosFactory.swift; sourceTree = "<group>"; };
+		EC2AB4BF219743DE002C3BA1 /* Plato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plato.swift; sourceTree = "<group>"; };
 		EC5363632197240B00063268 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5363662197240B00063268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC5363682197240B00063268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC53636B2197240B00063268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC53636D2197240D00063268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC5363702197240D00063268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC5363722197240D00063268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC53637B21973ECE00063268 /* PlatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatosViewController.swift; sourceTree = "<group>"; };
+		EC53637E21973F7800063268 /* PlatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC2AB4BE219743C4002C3BA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC2AB4BF219743DE002C3BA1 /* Plato.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EC53635A2197240B00063268 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +68,49 @@
 		EC5363652197240B00063268 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				EC2AB4BE219743C4002C3BA1 /* Model */,
+				EC53637A2197267E00063268 /* CustomViews */,
+				EC5363792197267400063268 /* ViewControllers */,
+				EC5363782197266300063268 /* Storyboards */,
 				EC5363662197240B00063268 /* AppDelegate.swift */,
-				EC5363682197240B00063268 /* ViewController.swift */,
-				EC53636A2197240B00063268 /* Main.storyboard */,
 				EC53636D2197240D00063268 /* Assets.xcassets */,
-				EC53636F2197240D00063268 /* LaunchScreen.storyboard */,
 				EC5363722197240D00063268 /* Info.plist */,
+				EC2AB4BC219743BC002C3BA1 /* PlatosFactory.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		EC5363782197266300063268 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EC53636F2197240D00063268 /* LaunchScreen.storyboard */,
+				EC53636A2197240B00063268 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EC5363792197267400063268 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC53637B21973ECE00063268 /* PlatosViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC53637A2197267E00063268 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EC53637D21973F3000063268 /* TableViewCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		EC53637D21973F3000063268 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EC53637E21973F7800063268 /* PlatoTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5363692197240B00063268 /* ViewController.swift in Sources */,
 				EC5363672197240B00063268 /* AppDelegate.swift in Sources */,
+				EC2AB4C0219743DE002C3BA1 /* Plato.swift in Sources */,
+				EC2AB4BD219743BC002C3BA1 /* PlatosFactory.swift in Sources */,
+				EC53637C21973ECE00063268 /* PlatosViewController.swift in Sources */,
+				EC53637F21973F7800063268 /* PlatoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
